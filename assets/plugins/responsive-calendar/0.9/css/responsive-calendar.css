@@ -1,0 +1,109 @@
+.responsive-calendar .controls {
+  text-align: center;
+}
+.responsive-calendar .controls a {
+  cursor: pointer;
+}
+.responsive-calendar .controls h4 {
+  display: inline;
+}
+.responsive-calendar .day-headers,
+.responsive-calendar .days {
+  font-size: 0;
+}
+.responsive-calendar .day {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  width: 14.285714285714286%;
+  text-align: center;
+}
+.responsive-calendar .day a {
+/*  color: #000000;*/
+  display: block;
+/*  cursor: pointer;*/
+  padding: 20% 0 20% 0;
+}
+
+.responsive-calendar .day:not(.past) a {
+  cursor: pointer;
+}
+
+.responsive-calendar .day:not(.past) a:hover {
+  background-color: #f2f8fb;
+  text-decoration: none;
+}
+.responsive-calendar .day.header {
+  border-bottom: 1px gray solid;
+}
+.responsive-calendar .day.active:not(.past) a {
+  background-color: #1d86c8;
+  border-left:1px solid #dedede;
+  border-right:1px solid #dedede;
+  border-bottom:1px solid #dedede;
+  color: #ffffff;
+}
+
+.responsive-calendar .day.active:not(.past) a:hover {
+  background-color: #36a0e2;
+}
+.responsive-calendar .day.active .not-current {
+  background-color: #8fcaef;
+  color: #ffffff;
+}
+.responsive-calendar .day.active .not-current:hover {
+  background-color: #bcdff5;
+}
+.responsive-calendar .day.not-current a {
+  color: #ddd;
+}
+
+.responsive-calendar .day.past.active a {
+  cursor:pointer;
+}
+
+.responsive-calendar .day.past.active a:hover {
+  background-color: #CCC;
+
+}
+
+.responsive-calendar .day.blocked {
+  background-color: #ffcccb;
+}
+
+.responsive-calendar .day.blocked a:hover {
+  background-color: #ffbfbd;
+}
+
+
+.responsive-calendar .day .badge {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  z-index: 1;
+}
+
+.responsive-calendar .day.past .bg-secondary  {
+  display:none;
+}
+
+.responsive-calendar .day .isPlaying {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  color:#FFFFFF;
+}
+
+.responsive-calendar .day.past .isPlaying {
+  display:none;
+}
+
+.bg-secondary {background-color: #FFF !important; color:#333;}
+
+.responsive-calendar .today {color:#CC0000;}
+
+.responsive-calendar .day.past {
+  background-color: #efefef;
+}
+

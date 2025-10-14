@@ -1,0 +1,1387 @@
+"Severity","ThreadID","Date","Time","Application","Message"
+"INFO","http-nio-8888-exec-6","12/24/2022","14:29:13","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Catalina-utility-2","12/24/2022","16:01:32","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"ERROR","http-nio-8888-exec-14","12/24/2022","16:08:59","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-17","12/24/2022","16:10:31","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-16","12/24/2022","16:10:35","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-20","12/24/2022","16:10:56","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-12","12/24/2022","16:11:45","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-11","12/24/2022","16:12:43","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-20","12/24/2022","16:13:15","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-14","12/24/2022","16:13:17","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-12","12/24/2022","16:14:32","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-14","12/24/2022","16:16:31","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-11","12/24/2022","16:18:28","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-20","12/24/2022","16:18:48","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-14","12/24/2022","16:18:49","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-13","12/24/2022","16:38:28","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"ERROR","http-nio-8888-exec-20","12/24/2022","16:40:21","lucee.transformer.bytecode.expression.var.VariableImpl","java.lang.NullPointerException;java.lang.NullPointerException
+	at lucee.runtime.osgi.OSGiUtil.loadClass(OSGiUtil.java:325)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:945)
+	at lucee.commons.lang.ClassUtil$OSGiBasedClassLoading.loadClass(ClassUtil.java:950)
+	at lucee.commons.lang.ClassUtil.__loadClass(ClassUtil.java:379)
+	at lucee.commons.lang.ClassUtil._loadClass(ClassUtil.java:363)
+	at lucee.commons.lang.ClassUtil.loadClass(ClassUtil.java:212)
+	at lucee.transformer.library.ClassDefinitionImpl.getClazz(ClassDefinitionImpl.java:115)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirstBIF(VariableImpl.java:374)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOutFirst(VariableImpl.java:364)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:225)
+	at lucee.transformer.bytecode.expression.var.VariableImpl._writeOut(VariableImpl.java:203)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.cast.CastString._writeOut(CastString.java:83)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOutAsType(ExpressionBase.java:62)
+	at lucee.transformer.bytecode.expression.ExpressionBase.writeOut(ExpressionBase.java:52)
+	at lucee.transformer.bytecode.statement.PrintOut._writeOut(PrintOut.java:72)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.BodyBase._writeOut(BodyBase.java:143)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.statement.tag.TagOutput.writeOutTypeNormal(TagOutput.java:103)
+	at lucee.transformer.bytecode.statement.tag.TagOutput._writeOut(TagOutput.java:81)
+	at lucee.transformer.bytecode.statement.StatementBase.writeOut(StatementBase.java:81)
+	at lucee.transformer.bytecode.util.ExpressionUtil.writeOut(ExpressionUtil.java:146)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:191)
+	at lucee.transformer.bytecode.BodyBase.writeOut(BodyBase.java:147)
+	at lucee.transformer.bytecode.Page.writeOutCallBody(Page.java:1499)
+	at lucee.transformer.bytecode.Page.writeOutCall(Page.java:1475)
+	at lucee.transformer.bytecode.Page.execute(Page.java:472)
+	at lucee.runtime.compiler.CFMLCompilerImpl._compile(CFMLCompilerImpl.java:109)
+	at lucee.runtime.compiler.CFMLCompilerImpl.compile(CFMLCompilerImpl.java:76)
+	at lucee.runtime.PageSourceImpl._compile(PageSourceImpl.java:446)
+	at lucee.runtime.PageSourceImpl.compile(PageSourceImpl.java:413)
+	at lucee.runtime.PageSourceImpl.loadPhysical(PageSourceImpl.java:331)
+	at lucee.runtime.PageSourceImpl.loadPageThrowTemplateException(PageSourceImpl.java:237)
+	at lucee.runtime.PageSourceImpl.loadPage(PageSourceImpl.java:1024)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:1051)
+	at lucee.runtime.PageContextImpl._doInclude(PageContextImpl.java:948)
+	at lucee.runtime.listener.ClassicAppListener._onRequest(ClassicAppListener.java:65)
+	at lucee.runtime.listener.MixedAppListener.onRequest(MixedAppListener.java:45)
+	at lucee.runtime.PageContextImpl.execute(PageContextImpl.java:2493)
+	at lucee.runtime.PageContextImpl._execute(PageContextImpl.java:2478)
+	at lucee.runtime.PageContextImpl.executeCFML(PageContextImpl.java:2449)
+	at lucee.runtime.engine.Request.exe(Request.java:45)
+	at lucee.runtime.engine.CFMLEngineImpl._service(CFMLEngineImpl.java:1216)
+	at lucee.runtime.engine.CFMLEngineImpl.serviceCFML(CFMLEngineImpl.java:1162)
+	at lucee.loader.engine.CFMLEngineWrapper.serviceCFML(CFMLEngineWrapper.java:97)
+	at lucee.loader.servlet.CFMLServlet.service(CFMLServlet.java:51)
+..."
+"INFO","http-nio-8888-exec-6","12/25/2022","14:08:15","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-8","12/25/2022","14:11:20","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-65148","12/28/2022","10:07:22","lucee.runtime.CFMLFactoryImpl","Reset 2 Unused PageContexts"
+"INFO","Thread-3313","12/28/2022","14:44:19","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-8","01/05/2023","18:53:47","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"ERROR","Thread-76385","01/05/2023","18:53:55","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s21-20020a05620a0bd500b006fa4ac86bfbsm26361843qki.55 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s21-20020a05620a0bd500b006fa4ac86bfbsm26361843qki.55 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s21-20020a05620a0bd500b006fa4ac86bfbsm26361843qki.55 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76402","01/05/2023","18:55:05","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor k20-20020ac84754000000b003a527d29a41sm22265642qtp.75 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor k20-20020ac84754000000b003a527d29a41sm22265642qtp.75 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor k20-20020ac84754000000b003a527d29a41sm22265642qtp.75 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76451","01/05/2023","18:58:56","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y1-20020a37f601000000b006fa2b1c3c1esm26028252qkj.58 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y1-20020a37f601000000b006fa2b1c3c1esm26028252qkj.58 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y1-20020a37f601000000b006fa2b1c3c1esm26028252qkj.58 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76468","01/05/2023","19:00:07","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i3-20020ac87643000000b003a68f5d98c1sm22501552qtr.93 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i3-20020ac87643000000b003a68f5d98c1sm22501552qtr.93 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i3-20020ac87643000000b003a68f5d98c1sm22501552qtr.93 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76518","01/05/2023","19:03:58","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ay34-20020a05620a17a200b006b929a56a2bsm26390696qkb.3 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ay34-20020a05620a17a200b006b929a56a2bsm26390696qkb.3 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ay34-20020a05620a17a200b006b929a56a2bsm26390696qkb.3 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76537","01/05/2023","19:05:10","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor r18-20020a05620a299200b006f9f714cb6asm26624469qkp.50 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor r18-20020a05620a299200b006f9f714cb6asm26624469qkp.50 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor r18-20020a05620a299200b006f9f714cb6asm26624469qkp.50 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76585","01/05/2023","19:09:00","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u2-20020a37ab02000000b006fc92cf4703sm25802794qke.132 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u2-20020a37ab02000000b006fc92cf4703sm25802794qke.132 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u2-20020a37ab02000000b006fc92cf4703sm25802794qke.132 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-76602","01/05/2023","19:10:11","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i6-20020a05620a248600b006faa2c0100bsm26785163qkn.110 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i6-20020a05620a248600b006faa2c0100bsm26785163qkn.110 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i6-20020a05620a248600b006faa2c0100bsm26785163qkn.110 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-77190","01/05/2023","19:58:58","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ck10-20020a05622a230a00b0039a610a04b1sm22649837qtb.37 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ck10-20020a05622a230a00b0039a610a04b1sm22649837qtb.37 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ck10-20020a05622a230a00b0039a610a04b1sm22649837qtb.37 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-77207","01/05/2023","20:00:08","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w26-20020a05620a095a00b006fc6529abaesm26146413qkw.101 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w26-20020a05620a095a00b006fc6529abaesm26146413qkw.101 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w26-20020a05620a095a00b006fc6529abaesm26146413qkw.101 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-77316","01/05/2023","20:09:01","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b23-20020ac87557000000b003a5c60686b0sm22201023qtr.22 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b23-20020ac87557000000b003a5c60686b0sm22201023qtr.22 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b23-20020ac87557000000b003a5c60686b0sm22201023qtr.22 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-77334","01/05/2023","20:10:13","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor p16-20020a05620a057000b00704c1f4e756sm25870144qkp.14 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor p16-20020a05620a057000b00704c1f4e756sm25870144qkp.14 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor p16-20020a05620a057000b00704c1f4e756sm25870144qkp.14 - gsmtp
+
+	... 5 more
+"
+"INFO","http-nio-8888-exec-10","01/06/2023","09:38:05","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-2","01/06/2023","09:38:21","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-2","01/06/2023","14:56:04","lucee.runtime.CFMLFactoryImpl","Reset 2 Unused PageContexts"
+"INFO","http-nio-8888-exec-4","01/06/2023","14:56:16","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-91033","01/06/2023","14:56:42","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"ERROR","Thread-1546","01/06/2023","16:58:34","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	... 4 more
+"
+"ERROR","Thread-1615","01/06/2023","17:03:35","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	... 4 more
+"
+"ERROR","Thread-2425","01/06/2023","18:03:36","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	... 4 more
+"
+"ERROR","Thread-3835","01/06/2023","19:59:00","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u15-20020a05620a454f00b006ce76811a07sm1404214qkp.75 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u15-20020a05620a454f00b006ce76811a07sm1404214qkp.75 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u15-20020a05620a454f00b006ce76811a07sm1404214qkp.75 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-3853","01/06/2023","20:00:10","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor h6-20020ac81386000000b003a7fef41526sm1220451qtj.77 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor h6-20020ac81386000000b003a7fef41526sm1220451qtj.77 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor h6-20020ac81386000000b003a7fef41526sm1220451qtj.77 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-3962","01/06/2023","20:09:03","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor q5-20020a37f705000000b006fab416015csm1396360qkj.25 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor q5-20020a37f705000000b006fab416015csm1396360qkj.25 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor q5-20020a37f705000000b006fab416015csm1396360qkj.25 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-3979","01/06/2023","20:10:16","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor cr26-20020a05622a429a00b003a68fe872a5sm1228301qtb.96 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor cr26-20020a05622a429a00b003a68fe872a5sm1228301qtb.96 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor cr26-20020a05622a429a00b003a68fe872a5sm1228301qtb.96 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-20083","01/07/2023","18:03:37","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	... 4 more
+"
+"ERROR","Thread-21469","01/07/2023","19:59:01","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y9-20020a37f609000000b006fa2b1c3c1esm2923396qkj.58 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y9-20020a37f609000000b006fa2b1c3c1esm2923396qkj.58 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y9-20020a37f609000000b006fa2b1c3c1esm2923396qkj.58 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-21486","01/07/2023","20:00:11","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y9-20020a37f609000000b006fa2b1c3c1esm2924712qkj.58 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y9-20020a37f609000000b006fa2b1c3c1esm2924712qkj.58 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y9-20020a37f609000000b006fa2b1c3c1esm2924712qkj.58 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-21595","01/07/2023","20:09:04","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y2-20020a05620a44c200b006f87d28ea3asm2960619qkp.54 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y2-20020a05620a44c200b006f87d28ea3asm2960619qkp.54 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor y2-20020a05620a44c200b006f87d28ea3asm2960619qkp.54 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-21613","01/07/2023","20:10:17","lucee.runtime.net.smtp.SMTPClient","534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor fg13-20020a05622a580d00b003a6a92a202esm2574138qtb.83 - gsmtp
+;lucee.runtime.exp.NativeException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor fg13-20020a05622a580d00b003a6a92a202esm2574138qtb.83 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:388)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:60)
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor fg13-20020a05622a580d00b003a6a92a202esm2574138qtb.83 - gsmtp
+
+	... 5 more
+"
+"ERROR","Thread-37688","01/08/2023","18:03:38","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@4some.golf
+
+	... 4 more
+"
+"INFO","Thread-305991","01/24/2023","03:40:18","lucee.runtime.CFMLFactoryImpl","Reset 2 Unused PageContexts"
+"INFO","Thread-73274","01/28/2023","09:35:35","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-15","01/28/2023","09:36:29","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-14","01/28/2023","09:37:23","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-9","01/28/2023","09:38:24","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-9","01/28/2023","09:38:24","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-33613","01/30/2023","08:05:19","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-81","01/30/2023","08:24:28","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-40731","02/01/2023","17:04:33","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-548307","03/05/2023","10:55:27","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-2","03/09/2023","09:52:44","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"ERROR","Thread-88630","03/10/2023","13:51:23","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-88693","03/10/2023","13:56:24","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-89054","03/10/2023","14:21:40","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-89088","03/10/2023","14:24:15","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	... 4 more
+"
+"ERROR","Thread-89120","03/10/2023","14:26:41","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-89154","03/10/2023","14:29:16","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	... 4 more
+"
+"ERROR","Thread-89512","03/10/2023","14:56:25","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-89877","03/10/2023","15:26:42","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-89911","03/10/2023","15:29:17","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	... 4 more
+"
+"ERROR","Thread-106774","03/11/2023","14:56:26","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-107140","03/11/2023","15:26:42","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: mkornguth@betterpool.com
+
+	... 4 more
+"
+"ERROR","Thread-107174","03/11/2023","15:29:18","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: skornguth@hotmail.com
+
+	... 4 more
+"
+"ERROR","Thread-118716","03/12/2023","08:31:54","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	... 4 more
+"
+"ERROR","Thread-118779","03/12/2023","08:36:55","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	... 4 more
+"
+"ERROR","Thread-119501","03/12/2023","09:36:56","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	... 4 more
+"
+"ERROR","Thread-136817","03/13/2023","09:36:57","lucee.runtime.net.smtp.SMTPClient","554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+;lucee.runtime.exp.NativeException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	at com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2358)
+	at com.sun.mail.smtp.SMTPTransport.finishData(SMTPTransport.java:2110)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1316)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:64)
+Caused by: com.sun.mail.smtp.SMTPSendFailedException: 554 Message rejected: Email address is not verified. The following identities failed the check in region US-EAST-1: noreply@teams.golf
+
+	... 4 more
+"
+"INFO","Thread-167991","03/15/2023","04:57:42","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-166100","03/24/2023","19:04:46","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-93080","04/12/2023","02:15:39","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-80573","04/16/2023","18:18:00","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-404054","05/10/2023","03:00:45","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-7","05/10/2023","03:02:26","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-591175","06/13/2023","09:48:24","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-159","06/13/2023","10:02:24","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-3141","06/13/2023","14:27:58","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-8964","06/14/2023","03:00:51","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-482549","07/12/2023","02:30:54","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-7","07/12/2023","02:32:38","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-11","07/12/2023","02:34:09","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-96539","07/17/2023","16:52:04","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-297403","08/09/2023","02:45:56","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-7","08/09/2023","02:47:40","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-531203","09/13/2023","02:31:52","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-51739","09/16/2023","02:30:06","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-431351","10/11/2023","02:31:03","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-211533","11/22/2023","04:04:21","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-22","11/22/2023","04:06:55","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-361174","12/13/2023","02:30:43","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-41765","12/15/2023","12:37:26","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-37477","01/12/2024","15:46:49","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-89709","01/19/2024","14:18:14","lucee.runtime.CFMLFactoryImpl","Reset 6 Unused PageContexts"
+"INFO","Thread-34","01/19/2024","14:21:05","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-1214764","05/13/2024","22:20:58","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-12","05/13/2024","22:22:40","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-3323","05/14/2024","03:00:38","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-15","05/14/2024","03:02:34","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-322795","06/01/2024","20:02:15","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-36","06/01/2024","20:05:55","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-6","07/18/2024","12:06:28","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-304037","08/05/2024","02:59:54","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-11","08/05/2024","03:01:34","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-785922","09/19/2024","16:12:07","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-15","09/19/2024","16:14:04","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-166","09/19/2024","16:28:36","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-6","09/22/2024","18:26:17","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-15","09/22/2024","18:27:49","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-487","09/22/2024","19:08:47","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-1287","09/25/2024","10:46:05","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-392","09/25/2024","11:19:23","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-50","09/25/2024","11:24:04","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-14","10/09/2024","02:06:52","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-138093","10/29/2024","16:37:23","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-64642","11/13/2024","02:30:03","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-11","11/13/2024","02:31:30","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-121489","12/02/2024","09:15:00","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-80600","12/11/2024","02:29:34","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","http-nio-8888-exec-7","01/07/2025","13:28:47","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"
+"INFO","Thread-18","01/15/2025","04:49:12","lucee.runtime.CFMLFactoryImpl","Reset 1 Unused PageContexts"

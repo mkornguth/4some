@@ -29,7 +29,11 @@
 
 			<tr data-pid="#getGroupMembers.player_id#">
 				<td>#getGroupMembers.first_name# #getGroupMembers.last_name# <cfif getGroupMembers.isAdmin eq 1><span class="badge bg-info">Admin</span></cfif></td>
-				<td class="text-center">#NumberFormat(getGroupMembers.handicap_current,"__._")# </td>
+				<td class="text-center">
+					<cfif isNumeric(getGroupMembers.handicap_current)>
+						#NumberFormat(getGroupMembers.handicap_current,"__._")# 
+					</cfif>
+				</td>
 				<td>
 					<cfif trend GT 0>
 						<div class="trend-up"><i class="fa-solid fa-caret-up"></i>  #trend#</div>

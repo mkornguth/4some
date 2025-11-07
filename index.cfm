@@ -83,7 +83,7 @@
                 </div>
             </div><!-- /col-sm-6 -->
             <div class="col-sm-6">
-                <img src="/assets/img/members.jpg" width="450px" class="img-rounded">
+                <img src="/assets/img/members.jpg" width="450px" class="img-rounded img-fluid">
             </div><!-- /col-sm-6 -->
             
         </div><!-- /row -->

@@ -1,5 +1,5 @@
 // service-worker.js at site root
-const VERSION = 'v1.0.1';            // bump on deploy
+const VERSION = 'v1.0.2';            // bump on deploy
 const STATIC_CACHE = `static-${VERSION}`;
 const OFFLINE_URL = '/index.cfm';    // your HTML entry
 

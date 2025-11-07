@@ -4,9 +4,8 @@
     "target": {
       "namespace": "android_app",
       "package_name": "golf.teams.www.twa",
-      "sha256_cert_fingerprints": [
-        "PASTE-YOUR-APP-SIGNING-SHA-256-HERE"
-      ]
+      "sha256_cert_fingerprints":
+        ["B0:88:0C:E7:AC:30:A9:22:2A:A3:DA:BA:95:69:EB:BD:D8:72:0A:FA:C2:95:0A:7D:B9:9E:60:96:93:C8:6D:B9"]
     }
   }
 ]

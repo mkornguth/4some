@@ -1,3 +1,7 @@
+<cfif listLen(variables.GroupList) eq 0>
+	<cflocation url="/account/groups.cfm">
+</cfif>
+
 <cfset navSelected = "groups">
 <style>
 	#group-select {font-size:18px !important;}

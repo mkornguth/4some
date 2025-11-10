@@ -21,7 +21,6 @@
 	</cfif>
 </cfif>
 
-
 <cfif isDefined("url.ghin") and isNumeric(url.ghin)>
 	<cfquery datasource="#variables.DSN#" name="lookupPlayer">
 		select *
@@ -145,24 +144,43 @@
 
 	    <cflocation url="#redirectUrl#">
 	<cfelse>
-		<!--- ---------------------- --->
-		<!--- Send email verification--->
-		<!--- ---------------------- --->
-		<cfset verificationToken = hmac(form.email,"skins")>
-		<cfmail subject="Email Verification Request" from="Teams.golf <no-reply@teams.golf>" to="#trim(form.email)#" bcc="admin@teams.golf" type="html">
-		 	<p>We have received a request to authorize this email address for use with the Teams.golf website. If you requested this verification, please go to the following URL to confirm that you are authorized to use this email address:</p>
-		 	<p>https://www.teams.golf/account/create.cfm?<cfif IsDefined("form.ghinID")>ghin=#form.ghinId#&</cfif><cfif IsDefined("form.homeClubId")>clubId=#form.homeClubId#&</cfif>email=#form.email#&token=#verificationToken#<cfif isDefined("cookie.inviteCode")>&code=#trim(cookie.inviteCode)#</cfif></p>
-		</cfmail>
-		
-		<h1>Verification Email Sent</h1>
-		<h4>Please check your email for a verification email and click the link.</h4>
-		<p>An email has been sent to <strong><cfoutput>#form.email#</cfoutput></strong>. For security purposes and in order to continue your account creation, you will need to click the link in the email sent to you to verify that email address belongs to you.</p>
-		<p>You may close this browser window now. The link in your email will launch a new one.</p>
+		<!--- Look for email address in database --->
+		<cfquery datasource="#variables.DSN#" name="lookupMember">
+    		select email
+    		from 4some.players
+    		where email = '#trim(form.email)#'
+    	</cfquery>
+
+    	<cfif lookupMember.recordcount EQ 0>
+			<!--- ---------------------- --->
+			<!--- Send email verification--->
+			<!--- ---------------------- --->
+			<cfset verificationToken = hmac(form.email,"skins")>
+
+			<cfmail subject="Email Verification Request" from="Teams.golf <no-reply@teams.golf>" to="#trim(form.email)#" bcc="admin@teams.golf" type="html">
+			 	<p>We have received a request to authorize this email address for use with the Teams.golf website. If you requested this verification, please go to the following URL to confirm that you are authorized to use this email address:</p>
+			 	<p>https://www.teams.golf/account/create.cfm?<cfif IsDefined("form.ghinID")>ghin=#form.ghinId#&</cfif><cfif IsDefined("form.homeClubId")>clubId=#form.homeClubId#&</cfif>email=#form.email#&token=#verificationToken#<cfif isDefined("cookie.inviteCode")>&code=#trim(cookie.inviteCode)#</cfif></p>
+			</cfmail>
+			
+			<h1>Verification Email Sent</h1>
+			<h4>Please check your email for a verification email and click the link.</h4>
+			<p>An email has been sent to <strong><cfoutput>#form.email#</cfoutput></strong>. For security purposes and in order to continue your account creation, you will need to click the link in the email sent to you to verify that email address belongs to you.</p>
+			<p>You may close this browser window now. The link in your email will launch a new one.</p>
+		<cfelse>
+			<cflocation url="/account/create.cfm?status=emailConflict&ghin=#form.ghinId#&clubId=#form.homeClubId#">
+		</cfif>
 	</cfif>
 <cfelse>
 	<!--- Account form --->
 	<div class="signup-box">
 		<h1>Create Your Account</h1>
+		<cfif isDefined("url.status")>
+			<cfswitch expression="#url.status#">
+				<cfcase value="emailConflict">
+					<div class="alert alert-danger">The email entered is already in our system. If you have an existing account, please <a href="/login.cfm">login</a>. Otherwise, please enter a unique email address.</div>
+				</cfcase>
+			</cfswitch>
+		</cfif>
 		<form id="frmCreate" action="/account/create.cfm" method="post">
 			<cfif wasLookedUp or emailVerified>
 				<div class="<cfif wasLookedUp>input-group</cfif> form-floating mb-3">

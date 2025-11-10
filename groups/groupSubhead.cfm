@@ -15,25 +15,15 @@
 
 <h1>Your Groups</h1>
 <cfif isDefined("url.status")>
-    
+    <div class="alert alert-success alert-calendar-status mb-5" role="alert">
     <cfswitch expression="#url.status#">
         <cfcase value="groupDeleted">
-            <div class="alert alert-success alert-calendar-status mb-5" role="alert">
+            
             <h4 class="alert-heading">Your group has been successfully deleted. <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button></h4>
-            </div>
-        </cfcase>
-        <cfcase value="ghinUpdateNameMismatch">
-            <div class="alert alert-danger alert-calendar-status mb-5" role="alert">
-            <h4 class="alert-heading">Your GHIN has <strong>NOT</strong> been updated, due to a last name mismatch with the GHIN number provided. <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button></h4>
-            </div>
-        </cfcase>
-        <cfcase value="accountUpdated">
-            <div class="alert alert-success alert-calendar-status mb-5" role="alert">
-            <h4 class="alert-heading">Your account has been successfully updated. <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button></h4>
-            </div>
+            
         </cfcase>
     </cfswitch>
-    
+    </div>
 </cfif>
 <div class="row">
 	<div class="col-6">

@@ -1,3 +1,7 @@
+<cfif listLen(variables.GroupList) eq 0>
+    <cflocation url="/account/groups.cfm">
+</cfif>
+
 <cfset navSelected = "calendar">
 <cfinclude template="/header.cfm">
 <style>

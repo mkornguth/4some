@@ -60,7 +60,8 @@
 			</div>
 		</div>
 		<div class="modal-footer" style="display:inline-block;width:100%;">
-			<a  class="btn btn-warning" href="/account/resetPassword.cfm?email=<cfoutput>#getMember.email#</cfoutput>&token=<cfoutput>#hmac(trim(getMember.email),'skins')#</cfoutput>">Reset my Password</a>
+			<a  class="btn btn-secondary" href="/account/settings/"><i class="fas fa-gear"></i> Settings</a>
+			<!--- <a  class="btn btn-warning" href="/account/resetPassword.cfm?email=<cfoutput>#getMember.email#</cfoutput>&token=<cfoutput>#hmac(trim(getMember.email),'skins')#</cfoutput>">Reset my Password</a> --->
 			<div class="float-end">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				<button type="submit" class="btn btn-primary">Save changes</button>

@@ -25,6 +25,15 @@
     where match_date = #CreateODBCDate(url.date)# and group_id = #url.gid#
 </cfquery>
 
+<cfquery datasource="#variables.DSN#" name="getCalendarBlock">
+	select *
+    from group_calendar_nomatch
+    where nomatch_date = #CreateODBCDate(url.date)# and group_id = #url.gid#
+</cfquery>
+<cfif getCalendarBlock.recordcount GT 0>
+	<cfset dayIsBlocked = true>
+</cfif>
+
 <cfif getMatch.recordcount GT 0>
 	<cfset url.mid = getMatch.match_id>
 
@@ -94,15 +103,6 @@
 
 	<cfif getGolfers.team_id GT 0>
 			<cfset teamsGenerated = true>
-	</cfif>
-<cfelse>
-	<cfquery datasource="#variables.DSN#" name="getCalendarBlock">
-		select *
-	    from group_calendar_nomatch
-	    where nomatch_date = #CreateODBCDate(url.date)# and group_id = #url.gid#
-	</cfquery>
-	<cfif getCalendarBlock.recordcount GT 0>
-		<cfset dayIsBlocked = true>
 	</cfif>
 </cfif>
 

@@ -54,7 +54,7 @@
 	</cfquery>
 
 	<cfif lookupPlayer.RecordCount GT 0>
-		<cfcookie name="GolferData" value="#lookupPlayer.player_id#,#trim(form.email)#, #trim(lookupPlayer.first_name)#, #trim(lookupPlayer.last_name)#">
+		<cfcookie name="GolferData" value="#lookupPlayer.player_id#,#trim(form.email)#, #trim(lookupPlayer.first_name)#, #trim(lookupPlayer.last_name)#" expires="30">
 
 		<!--- if an existing member is joining a new group and is logging in to their existing account, add their new group --->
 		<cfif isDefined("url.gid") and isDefined("url.action") and url.action eq "groupJoin">
@@ -76,7 +76,7 @@
 					<cfset local.groupList = listAppend(local.groupList, listItem)>
 				</cfoutput>
 				<cfset local.groupList = "{" & local.groupList & "}">
-				<cfcookie name="GolferGroups" value="#local.groupList#">
+				<cfcookie name="GolferGroups" value="#local.groupList#" expires="30">
 			</cfif>
 			
 

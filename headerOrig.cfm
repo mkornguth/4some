@@ -15,7 +15,7 @@
 <html lang="en" dir="ltr">
   <head>
 
-    <title>4some Generator</title>
+    <title>Teams.Golf</title>
     <meta name="description" content="...">
 
     <meta charset="utf-8">
@@ -60,7 +60,7 @@
 
           <!-- mobile close -->
           <div class="d-flex d-lg-none pb-3 justify-content-between align-items-center">
-            <img src="/assets/img/foursome-silhouettes.png"> <span class="navbar-brand-title">4some Generator</span>
+            <img src="/assets/img/foursome-silhouettes.png"> <span class="navbar-brand-title">Teams.Golf</span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMainContent" aria-controls="navbarMainContent" aria-expanded="false" aria-label="Toggle navigation">
               <svg height="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>

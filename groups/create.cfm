@@ -24,7 +24,7 @@
 				values (#getGroupIdentity.group_id#, #variables.player_id#, 1);
 		</cfquery>
 
-		<cfquery datasource="#variables.dsn#" name="getGroups">
+		<cfquery datasource="#variables.DSN#" name="getGroups">
 			select group_id, IsAdmin
 			from group_players
 			where player_id = #variables.player_id#

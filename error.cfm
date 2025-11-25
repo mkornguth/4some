@@ -7,14 +7,14 @@
 </style>
 
 
-<!--- 	<cfquery datasource="#variables.dsn#" name="insertError">
+<!--- 	<cfquery datasource="#variables.DSN#" name="insertError">
 		insert into 4some.errors (type, message, template, ip<cfif isDefined("variables.GolferId">, player_id</cfif><cfif error.type eq "database" and isDefined("error.additional.sql")>,sql</cfif>)
 			values ('#error.type#','#error.message#', '#error.template#', '#error.remote_address#'<cfif isDefined("variables.GolferId">, #variables.GolferId#</cfif><cfif error.type eq "database" and isDefined("error.additional.sql")>,'#error.additional.sql#'</cfif>)
 	</cfquery> --->
 
 <!--- <cfoutput>#variables.GolferId#</cfoutput><cfabort> --->
 
-<cfquery datasource="#variables.dsn#" name="insertError">
+<cfquery datasource="#variables.DSN#" name="insertError">
 	insert into 4some.errors (type, message, template, ip<cfif isDefined("variables.GolferId")>, player_id</cfif><cfif error.type eq "database" and isDefined("error.additional.sql")>,error_sql</cfif>)
 		values ('#error.type#','#error.message#', '#error.template#', '#error.remoteAddress#'<cfif isDefined("variables.GolferId")>, #variables.GolferId#</cfif><cfif error.type eq "database" and isDefined("error.additional.sql")>,'#error.additional.sql#'</cfif>)
 </cfquery>
